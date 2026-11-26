@@ -9,3 +9,9 @@ def home():
 @app.get("/students")
 def get_students():
     return {"name": "Senthu", "age": 25}
+
+
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
+
